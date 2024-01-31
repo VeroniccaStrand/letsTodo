@@ -1,0 +1,58 @@
+/* styles.css */
+
+/* Container for each todo */
+.todo-wrap {
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ddd; /* Lägg till en lätta gräns för separation mellan todos */
+  border-radius: 5px;
+  margin-bottom: 1em;
+}
+
+/* Styling för todo-texten */
+.todo-wrap .todo-title {
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  margin: 0;
+  flex-grow: 1; /* Gör texten flexibel så att den tar upp all tillgänglig plats */
+}
+
+/* Styling för italics text */
+.todo-wrap span {
+  font-style: italic;
+  font-weight: 100;
+  color: #7e9da5;
+}
+
+/* Styling för borttagna (completed) todos */
+.todo-wrap.completed {
+  opacity: 0.6; /* Sänk opaciteten för borttagna todos */
+}
+
+/* Styling för den linjerade genomstruken texten */
+.todo-wrap.completed .todo-title {
+  text-decoration: line-through;
+}
+
+/* Styling för felmeddelanden */
+.error-message {
+  color: #df432a;
+  margin-top: 0.5em;
+}
+
+/* Styling för delete-knappen */
+.delete-btn {
+  border: none;
+  background-color: transparent;
+  color: #df432a;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s; /* Smidig övergång för färgändring */
+}
+
+.delete-btn:hover {
+  color: #ff0000; /* Ändra färgen när du hover över delete-knappen */
+}

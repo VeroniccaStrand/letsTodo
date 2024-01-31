@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>The Todo App</title>
+  </head>
+  <body>
+    <div class="todo-list">
+      <!-- Todo items will be rendered here -->
+    </div>
+
+    <form id="form">
+      <label for="inputTodo">Todo:</label>
+      <input type="text" id="inputTodo" required />
+
+      <label for="instructions">Instructions:</label>
+      <input type="text" id="instructions" required />
+
+      <button type="submit">Add Todo</button>
+    </form>
+    <!-- Include auth.js from /public -->
+    <script type="module" src="auth.js"></script>
+
+    <!-- Include login.js from /public/login -->
+    <script type="module" src="login.js"></script>
+
+    <!-- Include register.js from /public/register -->
+    <script type="module" src="register.js"></script>
+
+    <!-- Include front.js from /public/front_page -->
+    <script type="module" src="front.js"></script>
+  </body>
+</html>
